@@ -91,7 +91,8 @@ sess = tf.InteractiveSession()
 
 cross_entropy = -tf.reduce_sum(y_ * tf.log(y_conv))
 
-train_step = tf.train.GradientDescentOptimizer(1e-4).minimize(cross_entropy)
+# train_step = tf.train.GradientDescentOptimizer(1e-4).minimize(cross_entropy)
+train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)
 
 correct_prediction = tf.equal(tf.argmax(y_conv, 1), tf.argmax(y_, 1))
 
