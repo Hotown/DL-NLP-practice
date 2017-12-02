@@ -20,7 +20,7 @@ def load_data():
         ['mr', 'licks', 'ate', 'my', 'steak', 'how', 'to', 'stop', 'him'],
         ['quit', 'buying', 'worthless', 'dog', 'food', 'stupid']
     ]
-    class_vector = [0, 1, 0, 1, 0]  # 1 means insulting sentence, 0 means not
+    class_vector = [0, 1, 0, 1, 0, 1]  # 1 means insulting sentence, 0 means not
     return posting_list, class_vector
 
 
